@@ -11,13 +11,54 @@
     <style name="TextStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/alef_bold</item>
-        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginStart">@dimen/dimenMarginStart</item>
     </style>
 
-    <style name="HeaderStyle" parent="TextStyle">
+    <style name="TextHeaderStyle" parent="TextStyle">
+        <item name="android:layout_marginTop">@dimen/dimenHeaderMarginTop</item>
         <item name="android:textColor">@color/colorPrimaryText</item>
-        <item name="android:textSize">40sp</item>
+        <item name="android:textSize">@dimen/dimenHeaderTextSize</item>
+    </style>
+
+    <style name="TextQuestionStyle" parent="TextStyle">
+        <item name="android:layout_marginTop">@dimen/dimenTextMarginTop</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/dimenTextSize</item>
+    </style>
+
+    <style name="RadioGroupStyle" parent="TextStyle">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimenRbMarginTop</item>
+        <item name="android:textSize">@dimen/dimenTextSize</item>
+    </style>
+
+    <style name="CheckboxStyle" parent="TextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimenRbMarginTop</item>
+        <item name="android:textSize">@dimen/dimenTextSize</item>
+    </style>
+
+    <style name="EditTextStyle" parent="TextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dimenMarginStart</item>
+        <item name="android:layout_marginEnd">@dimen/dimenMarginEnd</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">@dimen/dimenMarginStart</item>
+        <item name="android:layout_marginEnd">@dimen/dimenMarginEnd</item>
+        <item name="android:layout_marginTop">@dimen/dimenMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/dimenButtonMarginBottom</item>
     </style>
 
 </resources>

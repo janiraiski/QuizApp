@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimenMarginStart">18dp</dimen>
+    <dimen name="dimenMarginEnd">18dp</dimen>
+    <dimen name="dimenHeaderMarginTop">24dp</dimen>
+    <dimen name="dimenHeaderTextSize">20sp</dimen>
+    <dimen name="dimenTextMarginTop">18dp</dimen>
+    <dimen name="dimenTextSize">14sp</dimen>
+    <dimen name="dimenRbMarginTop">10dp</dimen>
+    <dimen name="dimenMarginTop">18dp</dimen>
+    <dimen name="dimenButtonMarginBottom">18dp</dimen>
+</resources>

@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <string name="headerQuestion1">Question 1</string>
+    <string name="headerQuestion2">Question 2</string>
+    <string name="headerQuestion3">Question 3</string>
+    <string name="headerQuestion4">Question 4</string>
+    <string name="headerQuestion5">Question 5</string>
+    <string name="headerQuestion6">Question 6</string>
+    <string name="textQuestion1">What does ROM mean?</string>
+    <string name="textQuestion2">Select necessary components to start a working computer</string>
+    <string name="textQuestion3">In what year was Windows Operating System released?</string>
+    <string name="textQuestion4">Which one of these two memory types get cleared after shutdown?</string>
+    <string name="textQuestion5">Which of the following are correct I/O ports on modern motherboard?</string>
+    <string name="textQuestion6">What is the purpose of GPU adapter in your computer?</string>
+    <string name="textQ1Hint">Answer here</string>
+    <string name="textQ2A1">Central Processing Unit</string>
+    <string name="textQ2A2">Computer Case</string>
+    <string name="textQ2A3">Random Access Memory</string>
+    <string name="textQ2A4">Motherboard</string>
+    <string name="textQ2A5">Power Supply</string>
+    <string name="textQ3A1">1995</string>
+    <string name="textQ3A2">1987</string>
+    <string name="textQ3A3">1985</string>
+    <string name="textQ4A1">ROM</string>
+    <string name="textQ4A2">RAM</string>
+    <string name="textQ5A1">HDMI</string>
+    <string name="textQ5A2">PSU</string>
+    <string name="textQ5A3">USB</string>
+    <string name="textQ5A4">GPU</string>
+    <string name="textQ6A1">Be the output device for audio only</string>
+    <string name="textQ6A2">Be the output device for video and audio</string>
+    <string name="textQ6A3">Be the ouput device for video only</string>
+    <string name="buttonText">Submit answers</string>
 </resources>
