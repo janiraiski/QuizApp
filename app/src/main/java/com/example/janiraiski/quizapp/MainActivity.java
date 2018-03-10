@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity
     public void Question1()
     {
         question1EditText = findViewById(R.id.question_1_edit_text);
-        String q1Answer = question1EditText.getText().toString();
+        String q1Answer = question1EditText.getText().toString().trim();
 
-        if (q1Answer.equals("Read Only Memory") || q1Answer.equals("read only memory"))
+        if (q1Answer.equalsIgnoreCase("Read Only Memory"))
         {
-            points += 1;
+            points++;
         }
     }
 
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity
         if (question2CheckBox1.isChecked() && !question2CheckBox2.isChecked() &&
                 question2CheckBox3.isChecked() && question2CheckBox4.isChecked() &&
                 question2CheckBox5.isChecked())
-            points += 1;
+            points++;
     }
 
     public void Question3()
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity
         question3RadioButton3 = findViewById(R.id.question_3_radio_button_3);
 
         if (question3RadioButton3.isChecked())
-            points += 1;
+            points++;
     }
 
     public void Question4()
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity
         question4RadioButton2 = findViewById(R.id.question_4_radio_button_2);
 
         if (question4RadioButton2.isChecked())
-            points += 1;
+            points++;
     }
 
     public void Question5()
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity
 
         if (question5CheckBox1.isChecked() && !question5CheckBox2.isChecked() &&
                 question5CheckBox3.isChecked() && !question5CheckBox4.isChecked())
-            points += 1;
+            points++;
     }
 
     public void Question6()
@@ -98,12 +98,15 @@ public class MainActivity extends AppCompatActivity
         question6RadioButton2 = findViewById(R.id.question_6_radio_button_2);
 
         if (question6RadioButton2.isChecked())
-            points += 1;
+            points++;
     }
 
     public void CheckAnswers(View v)
     {
         points = 0;
+        Context context = getApplication();
+        CharSequence text;
+        int duration = Toast.LENGTH_SHORT;
 
         Question1();
         Question2();
@@ -112,9 +115,20 @@ public class MainActivity extends AppCompatActivity
         Question5();
         Question6();
 
-        Context context = getApplication();
-        CharSequence text = "You got " + points + " points out of 6 points!";
-        int duration = Toast.LENGTH_SHORT;
+        if (points == 6)
+            text = "Wohoo! 6 points, you are a computer genius!";
+        else if (points == 5)
+            text = "Almost! 5 points, you know a lot about computers!";
+        else if (points == 4)
+            text = "4 points, you know some things about computers!";
+        else if (points == 3)
+            text = "3 points, you might need to learn some more about computers!";
+        else if (points == 2)
+            text = "2 points!";
+        else if (points == 1)
+            text = "1 point!";
+        else
+            text = "No points =(";
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
