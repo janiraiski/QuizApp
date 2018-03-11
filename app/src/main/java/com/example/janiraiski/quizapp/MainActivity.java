@@ -20,16 +20,13 @@ public class MainActivity extends AppCompatActivity {
     CheckBox question2CheckBox3;
     CheckBox question2CheckBox4;
     CheckBox question2CheckBox5;
-
-    RadioButton question3RadioButton3;
-
-    RadioButton question4RadioButton2;
-
     CheckBox question5CheckBox1;
     CheckBox question5CheckBox2;
     CheckBox question5CheckBox3;
     CheckBox question5CheckBox4;
 
+    RadioButton question3RadioButton3;
+    RadioButton question4RadioButton2;
     RadioButton question6RadioButton2;
 
     @Override
